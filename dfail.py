@@ -17,9 +17,9 @@ print(' |_____/  |_|    \____| |_| |_| ')
 print('                                ')
 
 
-alvo = input('\nQual site voce quer buscar os dominios?:\t')
+alvo = input('\nDigite link do site: ')
 
-wordlist = input('\nQual wordlist voce vai usar?:\t')
+wordlist = input('\nQual nome  da wordlist que voce quer usar?: ')
 
 wordlist_escolha = open(wordlist)
 
