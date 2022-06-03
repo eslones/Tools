@@ -19,7 +19,7 @@ print('                                ')
 
 alvo = input('\nDigite link do site: ')
 
-wordlist = input('\nQual nome  da wordlist que voce quer usar?: ')
+wordlist = input('\nQual nome da wordlist que voce deseja usar?: ')
 
 wordlist_escolha = open(wordlist)
 
