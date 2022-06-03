@@ -15,7 +15,6 @@ print(' | |  | | |  _|  / _` | | | | | ')
 print(' | |__| | | |   | (_| | | | | | ')
 print(' |_____/  |_|    \____| |_| |_| ')
 print('                                ')
-print('Precisa de ajuda? entre no laboratorio do nosso servidor: https://discord.gg/7dwt9qHnmy')
 
 
 alvo = input('\nQual site voce quer buscar os dominios?:\t')
