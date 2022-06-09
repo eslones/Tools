@@ -17,9 +17,9 @@ print(' |_____/  |_|    \____| |_| |_| ')
 print('                                ')
 
 try:
-  alvo = input('\nDigite link do site exemplo(https://www.youtube.com): ')
+  alvo = input('\nDigite link do site ([exemplo] https://www.youtube.com): ')
 
-  wordlist = input('\nQual o nome da wordlist que você deseja usar? exemplot(miniwordlist.txt): ')
+  wordlist = input('\nQual o nome da wordlist que você deseja usar? ([exemplo] miniwordlist.txt): ')
 
   wordlist_escolha = open(wordlist)
 
