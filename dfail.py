@@ -27,17 +27,20 @@ linha = wordlist_escolha.readline()
 
 print('\n')
 
-for linha in wordlist_escolha:
-  
-  requeste = requests.get(alvo+'/'+linha)
+try:
 
-  code = requeste.status_code
-  
-  if code == 200:
-    
-    print(f'[ON] ==> {alvo}/{linha}', end="")
-  else:
-    print(f'[OFF] -- {alvo}/{linha}', end="")
+  for linha in wordlist_escolha:
 
+    requeste = requests.get(alvo+'/'+linha)
+
+    code = requeste.status_code
+
+    if code == 200:
+
+      print(f'[ON] ==> {alvo}/{linha}', end="")
+    else:
+      print(f'[OFF] -- {alvo}/{linha}', end="")
+except:
+  print('Alguma coisa deu errado!')
 
 
