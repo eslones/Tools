@@ -16,30 +16,28 @@ print(' | |__| | | |   | (_| | | | | | ')
 print(' |_____/  |_|    \____| |_| |_| ')
 print('                                ')
 
-
-alvo = input('\nDigite link do site: ')
-
-wordlist = input('\nQual nome da wordlist que voce deseja usar?: ')
-
-wordlist_escolha = open(wordlist)
-
-linha = wordlist_escolha.readline()
-
-print('\n')
-
 try:
+  alvo = input('\nDigite link do site: ')
+
+  wordlist = input('\nQual nome da wordlist que voce deseja usar?: ')
+
+  wordlist_escolha = open(wordlist)
+
+  linha = wordlist_escolha.readline()
+
+  print('\n')
 
   for linha in wordlist_escolha:
 
-    requeste = requests.get(alvo+'/'+linha)
+     requeste = requests.get(alvo+'/'+linha)
 
-    code = requeste.status_code
+     code = requeste.status_code
 
-    if code == 200:
+     if code == 200:
 
-      print(f'[ON] ==> {alvo}/{linha}', end="")
-    else:
-      print(f'[OFF] -- {alvo}/{linha}', end="")
+       print(f'[ON] ==> {alvo}/{linha}', end="")
+     else:
+       print(f'[OFF] -- {alvo}/{linha}', end="")
 except:
   print('Alguma coisa deu errado!')
 
